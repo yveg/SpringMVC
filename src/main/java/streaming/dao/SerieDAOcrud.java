@@ -6,16 +6,13 @@
 package streaming.dao;
 
 import java.io.Serializable;
-import java.util.List;
 import org.springframework.data.repository.CrudRepository;
-import streaming.entity.Film;
+import streaming.entity.Serie;
 
 /**
  *
  * @author admin
  */
-public interface FilmDao extends CrudRepository<Film, Long>{
-    public Film findoneByTitreandannee (String t, Long a);
-    public  List<Film> findAllbyannee (long annee);   
+public interface SerieDAOcrud extends CrudRepository<Serie, Long>{
     
 }

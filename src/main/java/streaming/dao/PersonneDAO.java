@@ -20,7 +20,7 @@ import streaming.entity.Personne;
 public class PersonneDAO {
 
     @PersistenceContext
-    private EntityManager em;
+    private EntityManager em; 
 
     public List<Personne> listepersonne() {
         return em.createQuery("SELECT p FROM Personne p ORDER BY p.nom,p.prenom DESC").getResultList();
